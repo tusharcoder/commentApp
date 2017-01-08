@@ -3,7 +3,7 @@
 # @Email:  tamyworld@gmail.com
 # @Filename: settings.py
 # @Last modified by:   tushar
-# @Last modified time: 2017-01-08T13:34:02+05:30
+# @Last modified time: 2017-01-08T13:43:02+05:30
 
 
 
@@ -45,7 +45,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core'
+    'rest_framework',
+    'core',
 )
 
 MIDDLEWARE_CLASSES = (
