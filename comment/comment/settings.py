@@ -3,7 +3,7 @@
 # @Email:  tamyworld@gmail.com
 # @Filename: settings.py
 # @Last modified by:   tushar
-# @Last modified time: 2017-01-08T13:43:02+05:30
+# @Last modified time: 2017-01-09T00:36:36+05:30
 
 
 
@@ -46,11 +46,13 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+     'corsheaders',
     'core',
 )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -91,3 +93,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+CORS_ORIGIN_ALLOW_ALL=True
