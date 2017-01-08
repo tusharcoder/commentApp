@@ -3,7 +3,7 @@
 # @Email:  tamyworld@gmail.com
 # @Filename: views.py
 # @Last modified by:   tushar
-# @Last modified time: 2017-01-08T13:54:52+05:30
+# @Last modified time: 2017-01-08T13:56:03+05:30
 
 
 
@@ -18,6 +18,7 @@ from rest_framework.views import APIView
 #serializers
 class CommentSerializer(serializers.Serializer):
     """serializer of the comment"""
+    id=serializers.IntegerField()
     text = serializers.CharField(max_length=150)
     author = serializers.CharField(max_length=200)
 
